@@ -189,7 +189,6 @@
 </symbols>
 <devicesets>
 <deviceset name="PANASONIC_CAPACITOR_J16">
-<description>Panasonic J16 SMD Capacitor</description>
 <gates>
 <gate name="G$1" symbol="CAP_POL" x="2.54" y="5.08"/>
 </gates>
