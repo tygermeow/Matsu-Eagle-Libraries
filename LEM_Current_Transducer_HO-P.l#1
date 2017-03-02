@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -125,6 +125,26 @@ It is a PCB mount hall effect transducer for DC or AC current</description>
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="LEM_HO-P_CURRENT_TRANSDUCER">
+<description>This is an LEM hall effect current transduce PCB mount</description>
+<gates>
+<gate name="G$1" symbol="HO-P_CURRENT_TRANSDUCER" x="0" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="HO-P_CURRENT_TRANSDUCER">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$4"/>
+<connect gate="G$1" pin="OCD" pad="P$3"/>
+<connect gate="G$1" pin="SIG" pad="P$2"/>
+<connect gate="G$1" pin="VCC" pad="P$1"/>
+<connect gate="G$1" pin="VREF" pad="P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
